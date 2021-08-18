@@ -59,7 +59,7 @@ once and additional calls to an already initialized library will return
 
 Once the library has been successfully initialized, it should be terminated
 before the application exits.  Modern systems are very good at freeing resources
-allocated by programs that exit, but GLFW sometimes has to change global system
+allocated by programs that Exit, but GLFW sometimes has to change global system
 settings and these might not be restored without termination.
 
 @macos When the library is initialized the main menu and dock icon are created.

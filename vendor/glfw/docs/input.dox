@@ -300,7 +300,7 @@ glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
 This mode puts no limit on the motion of the cursor.
 
-To exit out of either of these special modes, restore the `GLFW_CURSOR_NORMAL`
+To Exit out of either of these special modes, restore the `GLFW_CURSOR_NORMAL`
 cursor mode.
 
 @code

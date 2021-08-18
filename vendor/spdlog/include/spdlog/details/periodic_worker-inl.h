@@ -24,7 +24,7 @@ SPDLOG_INLINE periodic_worker::periodic_worker(const std::function<void()> &call
             std::unique_lock<std::mutex> lock(this->mutex_);
             if (this->cv_.wait_for(lock, interval, [this] { return !this->active_; }))
             {
-                return; // active_ == false, so exit this thread
+                return; // active_ == false, so Exit this thread
             }
             callback_fun();
         }
